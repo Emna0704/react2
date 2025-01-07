@@ -45,8 +45,10 @@ const Home = () => {
         let value = rollDice()
         array.push(value)
       }
+      console.log('array', new Set(array));
       
-      if(array.every((currentValue) => currentValue === 6)){
+      
+      if(new Set(array).size ===1){
         brelands++
       }
     }

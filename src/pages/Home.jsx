@@ -45,7 +45,6 @@ const Home = () => {
         let value = rollDice()
         array.push(value)
       }
-      console.log('hhhhhhh',array);
       
       if(array.every((currentValue) => currentValue === 6)){
         brelands++

@@ -29,10 +29,18 @@ const App = () => {
 
   const handleBinaryChange = (value) => {
     setBinaryValue(value);
-
+  
     if (/^[01]*$/.test(value)) {
-      setDecimalValue(value !== "" ? parseInt(value, 2).toString() : "");
-      setError(""); 
+      if (value !== "") {
+        const bitLength = value.length;
+        const num = parseInt(value, 2);
+        const isNegative = value[0] === "1";
+        const decimalValue = isNegative ? num - Math.pow(2, bitLength) : num;
+        setDecimalValue(decimalValue.toString());
+      } else {
+        setDecimalValue("");
+      }
+      setError("");
     } else {
       setError("Le nombre binaire doit contenir uniquement des 0 et des 1.");
     }

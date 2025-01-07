@@ -1,7 +1,8 @@
 import React from "react";
 
-const BaseNumberInput = ({ label, value, onChangeBase }) => {
-  const handleChange = (event) => {
+const BaseNumberInput = ({label,value,onChangeBase}) => {
+
+    const handleChange = (event) => {
     onChangeBase(event.target.value);
   };
 

@@ -8,9 +8,19 @@ const App = () => {
 
   const handleDecimalChange = (value) => {
     setDecimalValue(value);
-    if (!isNaN(value) && value !== "") {
-      setBinaryValue(Number(value).toString(2));
-      setError(""); 
+    if (!isNaN(value) && value !== "" || (/^-?\d*$/.test(value))) {
+       
+      if (Number(value) < 0) {
+        const absBinary = Math.abs(Number(value)).toString(2).padStart(7, "0"); 
+        const signBit = "1"; 
+        const signMagnitudeBinary = signBit + absBinary; 
+        setBinaryValue(signMagnitudeBinary);
+      } else {
+      
+        const normalBinary = Number(value).toString(2); 
+        setBinaryValue(normalBinary);
+      }
+
     } else {
       setError("Le nombre  doit contenir que des chiffres");
       setBinaryValue("");

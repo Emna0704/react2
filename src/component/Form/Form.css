@@ -1,0 +1,17 @@
+.form-input {
+    margin-bottom: 20px;
+  }
+  
+  .form-input input {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .form-input button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

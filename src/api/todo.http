@@ -1,0 +1,6 @@
+PUT https://jsonplaceholder.typicode.com/users/1/todos/1 HTTP/1.1
+content-type: application/json
+
+{
+    "completed": true
+}

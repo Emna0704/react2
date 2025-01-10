@@ -1,0 +1,55 @@
+.addPost-container {
+  padding: 50px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.addPostForm {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.addTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.text-area {
+  width: 400px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+
+
+.addPostButton {
+  padding: 10px;
+  font-size: 1em;
+  color: #ffff;
+  background-color: #295b86 !important;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+
+}
